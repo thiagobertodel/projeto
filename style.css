@@ -19,13 +19,12 @@
 .light {
   --text-color: black;
   --bg-url: url(assets/bg-desktop-light.jpg);
-  --stroke-color:  rgba( 0, 0, 0.5);
+  --stroke-color: rgba(0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba( 0, 0, 0.02);
+  --surface-color-hover: rgba(0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(assets/sun.svg);
 }
-
 
 body {
   font-family: "Inter", sans-serif;
@@ -34,6 +33,7 @@ body {
 
 body {
   background: var(--bg-url) no-repeat top center/ cover;
+  height: 100vh;
 }
 
 #container {
@@ -84,7 +84,7 @@ body {
   left: initial;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -93,7 +93,6 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 999px;
-
 }
 
 /*links */
@@ -134,7 +133,6 @@ ul li a:hover {
 
 /*social links*/
 #social-links {
-
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -155,7 +153,7 @@ ul li a:hover {
   color: var(--text-color);
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
 }
 
@@ -164,4 +162,14 @@ footer {
   text-align: center;
   font-size: 13px;
   color: var(--text-color);
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(url(assets/bgpreto-desk.jpg.jpg));
+  }
+  .light {
+    --bg-url: url(url(assets/bgdkpbranco-light.jpg));
+  }
 }
